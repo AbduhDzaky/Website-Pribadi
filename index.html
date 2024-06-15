@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("gambar/Header Toraja.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">TOUR</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CULINARY</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:50px">TANA TORAJA</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Designed by Abduh</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+<br><br><h1 style="text-align: center;"><strong>TANA TORAJA</strong></h1>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="gambar/Tana Toraja.jpg" alt="" width="500" height="300" /></p>
+<p style="text-align: justify;">Kabupaten Tana Toraja adalah salah satu kabupaten yang berada di provinsi Sulawesi Selatan, Indonesia. Ibu kota dari kabupaten ini ada di kecamatan Makale. Tana Toraja memiliki luas wilayah 2.054,30 km&sup2; dan pada tahun 2021 memiliki penduduk sebanyak 270.489 jiwa dengan kepadatan 132 jiwa/km&sup2;.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h1 style="text-align: center;"><strong>WISATA TORAJA</strong></h1>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="gambar/Wisata Toraja.jpg" alt="" width="500" height="300" /></p>
+<p style="text-align: justify;">Masyarakat pada umumnya tidak melakukan upacraa ritual kematian, bila anda ingin menyaksi upacaar ritual kemataian bisa datang ke Tana torajadan melihat, Upacara Rambu Solo yang merupakan objek wisata populer di Tana Toraja.<br><br>
+
+Orang Toraja percaya bahwa orang yang meninggal adalah orang yang sedang sakit. Oleh sebab itu, orang yang telah meninggal tetap dirawat dan diperlakukan seperti orang hidup. Mereka masih menyediakan makanan, minuman, rokok, dan segala macam keperluan lainnya.</p>
+    </div>  
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h1 style="text-align: center;"><strong>KULINER TORAJA</strong></h1>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="gambar/Kuliner Toraja.jpg" alt="" width="500" height="300" /></p>
+<p style="text-align: justify;">Pa’piong adalah makanan khas Toraja yang dimasak dengan bambu yang kemudian dibakar dan dihidangkan dengan sayur. Sayur yang biasa menemani Pa’piong adalah daun mayana, sayur bulunangko, atau burak yaitu pohon pisang yang masih muda. Bumbu pa’piong ini adalah serai, daun bawang, merica, lombok katokkon alias cabe asli Toraja, dan berbagai rempah khas kuliner Toraja lainnya.<br><br> 
+
+Kuliner khas Toraja satu ini memiliki beberapa pilihan isian sesuai dengan selera, baik manuk (ayam), bale (ikan), bo’bo (nasi), atau daging babi. Selain itu, ada juga pa’piong burak yang merupakan pa’piong daging babi yang tampilannya mirip pepes</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Designed by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Abduh</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
